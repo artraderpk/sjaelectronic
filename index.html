@@ -2,7 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests;">
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
+
+    <!-- X-Frame-Options (can be added as meta tag, but only partially effective) -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+    <!-- X-Content-Type-Options (cannot be set as meta tag) -->
+
+    <!-- Referrer-Policy -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <!-- Permissions-Policy -->
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
     <meta charset="utf-8">
     <title>SJA Electronic - 360 Electronics Manufacturing Company</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
